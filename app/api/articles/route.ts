@@ -1,10 +1,9 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 import axios from "axios";
 
 import { PrismaClient, Article } from "@prisma/client";
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST() {
   try {
     const prisma = new PrismaClient();
     for (let i = 1; i < 4; i++) {

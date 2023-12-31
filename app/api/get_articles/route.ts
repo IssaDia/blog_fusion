@@ -2,9 +2,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-import { PrismaClient, Article } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET() {
   try {
     const prisma = new PrismaClient();
 

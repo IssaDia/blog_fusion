@@ -56,11 +56,10 @@ export default function Homepage() {
               className="text-blue-500 hover:underline block mt-2"
               onClick={(event) => markArticleAsVisited(article.id, event)}
             >
-              Lire l'article
+              Lire l&apos;article
             </Link>
             {visitedArticles[article.id] && (
               <span className="text-green-500 block mt-2">
-                {" "}
                 ✓ Article visité
               </span>
             )}
