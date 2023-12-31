@@ -24,7 +24,7 @@ export default function Homepage() {
     };
 
     fetchArticles();
-  }, []);
+  }, [visitedArticles]);
 
   const markArticleAsVisited = (articleId, event) => {
     setVisitedArticles((prevVisited) => ({
