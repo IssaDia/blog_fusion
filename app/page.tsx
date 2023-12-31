@@ -1,7 +1,6 @@
 "use client";
-import Homepage from "./components/homepage/homepage";
+import Homepage from "./components/homepage/Homepage";
 import { PrismaClient } from "@prisma/client";
-import type { InferGetStaticPropsType, GetServerSideProps } from "next";
 
 const prisma = new PrismaClient();
 
